@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Head from './head/head';
-import Accordion from './Accordion/Accordion';
+import About from './about/about';
+import Footer from './footer/footer2';
+import Login from './login/login';
 
 function App() {
   return (
     <div className="App">
-      <Head/>
-      <Accordion/>
+      <br/>
+      <About/>
+      <Login/>
+      <Footer/>
     </div>
   );
 }
