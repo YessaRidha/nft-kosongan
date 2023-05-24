@@ -1,0 +1,172 @@
+.container{
+    background: #EFEFEF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.gallery {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    background: linear-gradient(90deg, #7C02FE 0%, #F552CE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    fill: transparent;
+    margin-right: 20px;
+}
+
+.border {
+    width: 2px;
+    height: 55px;
+    background-color: #8407FB;
+}
+
+.check {
+    font-family: 'Inter', sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 28px;
+
+    color: #BDBDBD;
+}
+
+.opensea {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 28px;
+    cursor: pointer;
+
+    color: #BDBDBD;
+}
+
+.opensea-icon {
+    margin-left: 5px;
+    color: #BDBDBD;
+}
+
+.nomor {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    left: 9px;
+    top: -23px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.backnomor {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    left: 7px;
+    top: 9px;
+
+    background: #F0F0F0;
+    border-radius: 5px;
+}
+
+.team {
+    width: 70px;
+    height: 12px;
+    top: 289px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #000000;
+}
+
+.location {
+    width: 230px;
+    height: 24px;
+    left: 17px;
+    top: 301px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    color: #000000;
+}
+
+.bid {
+    width: 45px;
+    height: 12px;
+    left: 17px;
+    top: 330px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+
+    color: #000000;
+}
+
+.eth {
+    width: 120px;
+    height: 24px;
+    left: 48px;
+    top: 349px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    color: #000000;
+}
+
+.icon-span {
+    margin-right: 5px;
+}
+
+.days {
+    width: 71px;
+    height: 17px;
+    margin-left: 170px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #000000;
+}
