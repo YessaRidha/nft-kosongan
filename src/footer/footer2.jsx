@@ -4,8 +4,16 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Icon } from "@iconify/react";
-import { CardMedia, Typography } from "@mui/material";
+import { CardMedia, TextField, Typography } from "@mui/material";
 import Imagenft from '../assets/nft.png'
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 
 const Footer = () => {
   return (
@@ -19,9 +27,11 @@ const Footer = () => {
                 width: '50%',
                 left: '87px',
                 top: '68px',
+                cursor: 'pointer'
               }}
               image={Imagenft}
               alt="NFT"
+              onClick={scrollToTop}
             />
             <div>
               <a>
@@ -84,7 +94,8 @@ const Footer = () => {
             <a>Masih percobaan. Ini adalah deskripsi perusahaan. Masih percobaan untuk mencoba.</a>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <input
-                type="text"
+                name="email"
+                type={"email"}
                 placeholder="Enter email address"
                 style={{
                   marginRight: '10px',

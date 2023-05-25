@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   Container, Grid, Card, CardActionArea, CardMedia, CardContent,
-  Typography, Dialog, Box
+   Dialog, Box,
 } from '@mui/material';
 import '../gallery/gallery.css';
 import { Icon } from '@iconify/react';
@@ -34,7 +34,7 @@ export default function ActionAreaCard() {
 
 
   const style = {
-    width: 831.5,
+    width: 835,
     height: 400,
     bgcolor: '#fff',
     boxShadow: 24,
@@ -44,7 +44,7 @@ export default function ActionAreaCard() {
   };
 
   const imageStyle = {
-    width: 300,
+    width: 350,
     height: 410,
     marginRight: 20,
   };
@@ -109,13 +109,15 @@ export default function ActionAreaCard() {
       <Container sx={{ marginTop: '40px', marginBottom: '40px' }}>
         <div className="header-container">
           <div className="header-content">
-            <h1 className="gallery">Gallery</h1>
+            <h2 className="gallery">Gallery</h2>
             <div className="border"></div>
             <h2 className="check">Check it on</h2>
-            <a href="https://opensea.io/" className="opensea">
-              OpenSea
-              <Icon icon="simple-icons:opensea" className="opensea-icon" />
-            </a>
+            <div className='opensea-container'>
+              <h2 href="https://opensea.io/" className="opensea">
+                OpenSea
+                <Icon icon="simple-icons:opensea" className="opensea-icon" />
+              </h2>
+            </div>
           </div>
         </div>
 
@@ -148,7 +150,6 @@ export default function ActionAreaCard() {
         </Grid>
 
         <Dialog
-          style={{ borderRadius: '150px' }}
           open={open}
           onClose={handleClose}
           maxWidth="md"
@@ -157,13 +158,23 @@ export default function ActionAreaCard() {
         >
           <Box sx={style}>
             <div style={imageStyle}>
-              <img src={selectedCard?.image} alt="NFT" style={{ width: '100%', borderRadius: '15px' }} />
+              <img src={selectedCard?.image} alt="NFT" style={{ width: '100%', borderRadius: '5px', margin: '30px' }} />
             </div>
             <div style={textStyle}>
-              <Typography variant="h6" component="h2">
-                NFT
-              </Typography>
-              <Typography sx={{ mt: 2 }}>Nft ticket</Typography>
+              <div className='popup-title'>{selectedCard?.description}</div>
+              <div className='popup-number'>{selectedCard?.number}</div><Icon icon="simple-icons:opensea" className="popup-icon" />
+              <div className='popup-border'></div>
+              <div className='popup-border2'></div>
+              <div className='popup-border3'></div>
+              <div className='popup-border4'></div>
+              <div className='popup-border-title1'>Headband</div>
+              <div className='popup-border-title2'>Style</div>
+              <div className='popup-border-title3'>Base</div>
+              <div className='popup-border-title4'>Look</div>
+              <Icon className='popup-icon1' icon="jam:headset-f" />
+              <Icon className='popup-icon2' icon="solar:pallete-2-bold" />
+              <Icon className='popup-icon3' icon="ic:outline-circle" />
+              <Icon className='popup-icon4' icon="lucide:rotate-3d" />
             </div>
           </Box>
         </Dialog>
