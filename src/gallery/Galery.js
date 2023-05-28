@@ -1,27 +1,22 @@
 import React, { useState } from 'react';
 import {
   Container, Grid, Card, CardActionArea, CardMedia, CardContent,
-   Dialog, Box,
+  Dialog, Box,
 } from '@mui/material';
 import '../gallery/gallery.css';
 import { Icon } from '@iconify/react';
-import headerImg1 from '../assets/00001.png'
-import headerImg2 from '../assets/00002.png'
-import headerImg3 from '../assets/00003.png'
-import headerImg4 from '../assets/00004.png'
-import headerImg5 from '../assets/00005.png'
-import headerImg6 from '../assets/00006.png'
-import headerImg7 from '../assets/00007.png'
-import headerImg8 from '../assets/00008.png'
-
-
+import headerImg1 from '../assets/00001.png';
+import headerImg2 from '../assets/00002.png';
+import headerImg3 from '../assets/00003.png';
+import headerImg4 from '../assets/00004.png';
+import headerImg5 from '../assets/00005.png';
+import headerImg6 from '../assets/00006.png';
+import headerImg7 from '../assets/00007.png';
+import headerImg8 from '../assets/00008.png';
 
 export default function ActionAreaCard() {
   const [open, setOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
-
-
-
 
   const handleClickOpen = (card) => {
     setSelectedCard(card);
@@ -31,7 +26,6 @@ export default function ActionAreaCard() {
   const handleClose = () => {
     setOpen(false);
   };
-
 
   const style = {
     width: 835,
@@ -65,7 +59,8 @@ export default function ActionAreaCard() {
       description: 'Asatomo Tokyo',
       image: headerImg2,
       number: '#355',
-    }, {
+    },
+    {
       title: 'Team Series',
       description: 'Asatomo Tokyo',
       image: headerImg3,
@@ -76,7 +71,8 @@ export default function ActionAreaCard() {
       description: 'Asatomo Tokyo',
       image: headerImg4,
       number: '#357',
-    }, {
+    },
+    {
       title: 'Team Series',
       description: 'Asatomo Tokyo',
       image: headerImg5,
@@ -87,7 +83,8 @@ export default function ActionAreaCard() {
       description: 'Asatomo Tokyo',
       image: headerImg6,
       number: '#359',
-    }, {
+    },
+    {
       title: 'Team Series',
       description: 'Asatomo Tokyo',
       image: headerImg7,
@@ -101,9 +98,6 @@ export default function ActionAreaCard() {
     },
   ];
 
-
-
-
   return (
     <div className='container'>
       <Container sx={{ marginTop: '40px', marginBottom: '40px' }}>
@@ -111,6 +105,8 @@ export default function ActionAreaCard() {
           <div className="header-content">
             <h2 className="gallery">Gallery</h2>
             <div className="border"></div>
+          </div>
+          <div className='header-check'>
             <h2 className="check">Check it on</h2>
             <div className='opensea-container'>
               <h2 href="https://opensea.io/" className="opensea">
@@ -123,7 +119,7 @@ export default function ActionAreaCard() {
 
         <Grid container spacing={2}>
           {cards.map((card, index) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index} className="card-grid">
               <Card sx={{ height: '100%', borderRadius: '5px' }}>
                 <CardActionArea onClick={() => handleClickOpen(card)}>
                   <CardMedia
@@ -139,10 +135,16 @@ export default function ActionAreaCard() {
                 </CardActionArea>
                 <CardContent className="card-content">
                   <div className='team'>{card.title}</div>
-                  <div className='location'>{card.description}<Icon icon="mdi:check-decagram-outline" /></div>
-                  <div className='bid' >TOP BID</div>
-                  <div className='eth' ><Icon style={{ marginRight: '5px' }} icon="cryptocurrency:eth" />  22.2 ETH</div>
-                  <div className='days' >2 days left</div>
+                  <div className='location'>
+                    {card.description}
+                    <Icon icon="mdi:check-decagram-outline" />
+                  </div>
+                  <div className='bid'>TOP BID</div>
+                  <div className='eth'>
+                    <Icon style={{ marginRight: '5px' }} icon="cryptocurrency:eth" />
+                    22.2 ETH
+                  </div>
+                  <div className='days'>2 days left</div>
                 </CardContent>
               </Card>
             </Grid>
@@ -162,7 +164,8 @@ export default function ActionAreaCard() {
             </div>
             <div style={textStyle}>
               <div className='popup-title'>{selectedCard?.description}</div>
-              <div className='popup-number'>{selectedCard?.number}</div><Icon icon="simple-icons:opensea" className="popup-icon" />
+              <div className='popup-number'>{selectedCard?.number}</div>
+              <Icon icon="simple-icons:opensea" className="popup-icon" />
               <div className='popup-border'></div>
               <div className='popup-border2'></div>
               <div className='popup-border3'></div>
