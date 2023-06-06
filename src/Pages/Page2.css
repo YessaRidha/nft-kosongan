@@ -1,0 +1,95 @@
+.Page2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .headpage2 {
+    position: absolute;
+    width: 774px;
+    height: 134px;
+    left: 590px;
+    top: 115vh;
+
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    background: linear-gradient(90deg, #8000FF 0%, #FF00FD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .Page2 p {
+    position: absolute;
+    left: 590px;
+    top: 135vh;
+
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+  
+    color: #141414;
+
+    mix-blend-mode: normal;
+    text-shadow: 2px 2px 30px #6BCDE6;
+  }
+  
+  .cal-container {
+    margin-right: 30px;
+    margin-bottom: 80px;
+  }
+  
+  .cal-container img {
+    position: absolute;
+    width: 652px;
+    height: 652px;
+    top: 80vh;
+    right: 60vhx;
+
+  }
+
+  @media (max-width: 768px) {
+  .Page2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headpage2 {
+    position: static;
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 50px;
+  }
+
+  .Page2 p {
+    left: auto;
+    top: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 10px;
+    max-width: 300px;
+    font-size: 10px;
+  }
+
+  .cal-container {
+    display: none;
+  }
+}
+
+  
