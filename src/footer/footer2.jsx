@@ -130,13 +130,13 @@ const Footer = () => {
           <p>@{new Date().getFullYear()} NFT Ticket Staging. All rights reserved.</p>
           <div className="sb_footer-links_div_media">
             <div className="socialmedia">
-              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <Icon className="icon" icon="ic:round-facebook" style={{ fontSize: '30px' }} />
               </a>
-              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
                 <Icon className="icon" icon="mdi:twitter" style={{ fontSize: '30px' }} />
               </a>
-              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <Icon className="icon" icon="ri:instagram-fill" style={{ fontSize: '30px' }} />
               </a>
               <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">

@@ -35,7 +35,7 @@
 }
 
 .sb_footer-links_div {
-  width: 131px;
+  width: 150px;
   margin: 3rem;
   display: flex;
   flex-direction: column;
@@ -50,9 +50,12 @@
   color: rgb(0, 0, 0);
   height: 100%;
 }
+.sb_footer-links_div_news h2 {
+  margin-top: 9px;
+}
 
 .sb_footer-links_div_pt {
-  width: 400px;
+  width: 350px;
   margin: 2rem;
   display: flex;
   flex-direction: column;
