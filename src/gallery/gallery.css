@@ -220,7 +220,6 @@
 
     color: #000000;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .popup-number {
@@ -239,7 +238,6 @@
 
     color: #000000;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .popup-icon {
@@ -250,7 +248,6 @@
 
     color: #2596be;
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .popup-border {
@@ -271,7 +268,6 @@
 
     background: #FFFFFF;
     border: 3px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
@@ -293,7 +289,6 @@
 
     background: #FFFFFF;
     border: 3px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
@@ -315,7 +310,6 @@
 
     background: #FFFFFF;
     border: 3px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
@@ -337,7 +331,6 @@
 
     background: #FFFFFF;
     border: 3px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
@@ -357,7 +350,6 @@
 
     color: #8E8E8E;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .popup-border-title2 {
@@ -376,7 +368,6 @@
 
     color: #8E8E8E;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .popup-border-title3 {
@@ -395,7 +386,6 @@
 
     color: #8E8E8E;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .popup-border-title4 {
@@ -414,7 +404,6 @@
 
     color: #8E8E8E;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .popup-icon1 {
@@ -481,93 +470,195 @@
     }
 
     .popup-title {
-        left: 50%;
+        font-size: 45px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 350%);
+        position: absolute;
+        left: 50%;
     }
 
     .popup-number {
+        font-size: 35px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-70%, 525%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 57px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-icon {
+        font-size: 35px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(90%, 280%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 64px);
-        transform: translate(-50%, -50%);
+    }
+
+    .popup-title {
+        top: 200px;
+    }
+
+    .popup-number {
+        top: 260px;
     }
 
     .popup-border {
+        width: 230px;
+        height: 55px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-110%, 320%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 123px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border2 {
+        width: 230px;
+        height: 55px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(10%, 320%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 194px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border3 {
+        width: 230px;
+        height: 55px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-110%, 500%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 265px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border4 {
+        width: 230px;
+        height: 55px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate( 10%, 500%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 336px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border-title1 {
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-200%, 500%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 33px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border-title2 {
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate( 3%, 500%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 104px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border-title3 {
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-225%, 835%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 175px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-border-title4 {
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate( 5%, 835%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 246px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-icon1 {
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-800%, 623%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 42px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-icon2 {
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate( 115%, 623%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 113px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-icon3 {
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate(-800%, 953%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 184px);
-        transform: translate(-50%, -50%);
     }
 
     .popup-icon4 {
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        top: 50%;
+        transform: translate( 115%, 953%);
+        position: absolute;
         left: 50%;
-        top: calc(50% + 255px);
-        transform: translate(-50%, -50%);
     }
 }
 
@@ -579,9 +670,7 @@
     .card-grid {
         width: 50%;
     }
-}
 
-@media (max-width: 599px) {
     .header-container {
         display: flex;
         flex-direction: column;
@@ -604,7 +693,7 @@
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 130%);
         position: absolute;
         left: 50%;
     }
@@ -616,7 +705,7 @@
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-70%, 40%);
+        transform: translate(-70%, 160%);
         position: absolute;
         left: 50%;
     }
@@ -627,8 +716,7 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-        top: 50%;
-        transform: translate(80%, -50%);
+        top: 270px;
         position: absolute;
         left: 50%;
     }
@@ -641,147 +729,158 @@
         top: 260px;
     }
 
-    .popup-border{
-        width: 200px;
-        height: 40px;
+    .popup-border {
+        width: 250px;
+        height: 45px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-50%, 80%);
+        transform: translate(-50%, 100%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-border2{
-        width: 200px;
-        height: 40px;
+
+    .popup-border2 {
+        width: 250px;
+        height: 45px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-50%, 230%);
+        transform: translate(-50%, 270%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-border3{
-        width: 200px;
-        height: 40px;
+
+    .popup-border3 {
+        width: 250px;
+        height: 45px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-50%, 380%);
+        transform: translate(-50%, 440%);
         position: absolute;
         left: 50%;
 
     }
+
     .popup-border4 {
-        width: 200px;
-        height: 40px;
+        width: 250px;
+        height: 45px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-50%, 530%);
+        transform: translate(-50%, 610%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-border-title1{
-        font-size: 15px;
+
+    .popup-border-title1 {
+        font-size: 18px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-90%, 30%);
+        transform: translate(-110%, 60%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-border-title2{
-        font-size: 15px;
+
+    .popup-border-title2 {
+        font-size: 18px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-107%, 245%);
+        transform: translate(-130%, 330%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-border-title3{
-        font-size: 15px;
+
+    .popup-border-title3 {
+        font-size: 18px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-107%, 470%);
+        transform: translate(-128%, 595%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-border-title4{
-        font-size: 15px;
+
+    .popup-border-title4 {
+        font-size: 18px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-107%, 688%);
+        transform: translate(-128%, 865%);
         position: absolute;
         left: 50%;
 
     }
-    .popup-icon1{
-        height: 20px;
+
+    .popup-icon1 {
+        height: 30px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-300%, 220%);
+        transform: translate(-400%, 175%);
         position: absolute;
         left: 50%;
     }
-    .popup-icon2{
-        height: 20px;
+
+    .popup-icon2 {
+        height: 30px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-300%, 540%);
+        transform: translate(-400%, 430%);
         position: absolute;
         left: 50%;
     }
-    .popup-icon3{
-        height: 20px;
+
+    .popup-icon3 {
+        height: 30px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-300%, 850%);
+        transform: translate(-400%, 685%);
         position: absolute;
         left: 50%;
     }
-    .popup-icon4{
-        height: 20px;
+
+    .popup-icon4 {
+        height: 30px;
         justify-content: center;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
         top: 50%;
-        transform: translate(-300%, 1165%);
+        transform: translate(-400%, 940%);
         position: absolute;
         left: 50%;
     }
