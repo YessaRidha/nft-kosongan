@@ -3,8 +3,10 @@ import {
   Container, Grid, Card, CardActionArea, CardMedia, CardContent,
   Dialog, Box,
 } from '@mui/material';
-import '../gallery/gallery.css';
 import { Icon } from '@iconify/react';
+
+
+import '../gallery/gallery.css';
 import headerImg1 from '../assets/00001.png';
 import headerImg2 from '../assets/00002.png';
 import headerImg3 from '../assets/00003.png';
@@ -32,8 +34,8 @@ export default function ActionAreaCard() {
   };
 
   const style = {
-    width: window.innerWidth < 899 ? dialogStyle.width : 835,
-    height: window.innerWidth < 899 ? dialogStyle.height : 400,
+    width: window.innerWidth < 899 ? (window.innerWidth < 599 ? dialogStyle.width : dialogStyle.width) : 835,
+    height: window.innerWidth < 899 ? (window.innerWidth < 599 ? dialogStyle.height : dialogStyle.height) : 400,
     bgcolor: '#fff',
     boxShadow: 24,
     p: 4,
@@ -42,20 +44,20 @@ export default function ActionAreaCard() {
   };
 
   const imageStyle = {
-    width: window.innerWidth < 599 ? 400 : (window.innerWidth < 899 ? 800 : 350),
-    height: window.innerWidth < 599 ? 500 : (window.innerWidth < 899 ? 400 : 410),
+    width: window.innerWidth < 599 ? 400 : (window.innerWidth < 899 ? 900 : 350),
+    height: window.innerWidth < 599 ? 600 : (window.innerWidth < 899 ? 400 : 410),
     marginRight: window.innerWidth < 899 ? 0 : 20,
-    marginLeft: window.innerWidth < 599 ? 55 : (window.innerWidth < 899 ? 80 : 0),
-    marginTop: window.innerWidth < 599 ? -120 : (window.innerWidth < 899 ? -350 : 0),
+    marginLeft: window.innerWidth < 599 ? 60 : (window.innerWidth < 899 ? 75 : 0),
+    marginTop: window.innerWidth < 599 ? -20 : (window.innerWidth < 899 ? -350 : 0),
   };
 
   const textStyle = {
-    width: '50%',
+    width: window.innerWidth < 899 ? '50%' : 'initial',
   };
 
   const updateDialogStyle = () => {
     const newDialogStyle = {
-      height: window.innerWidth < 599 ? 600 : window.innerWidth < 899 ? 800 : 465,
+      height: window.innerWidth < 599 ? 700 : window.innerWidth < 899 ? 800 : 465,
       width: window.innerWidth < 599 ? 400 : window.innerWidth < 899 ? 600 : 1200,
     };
     setDialogStyle(newDialogStyle);
@@ -177,7 +179,6 @@ export default function ActionAreaCard() {
             </Grid>
           ))}
         </Grid>
-
         <Dialog
           open={open}
           onClose={handleClose}
@@ -188,6 +189,7 @@ export default function ActionAreaCard() {
             style: {
               ...style,
               ...dialogStyle,
+              overflow: window.innerWidth < 599 ? 'hidden' : ''
             },
           }}
         >
