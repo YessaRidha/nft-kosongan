@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "projectxetia",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+=======
+  "name": "nft-kosong",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+>>>>>>> 726a1f729d3e9bd518bc5efd679f353b4eb3e182
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
