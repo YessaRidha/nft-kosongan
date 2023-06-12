@@ -1,0 +1,60 @@
+
+.banner {
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 20px ;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    font-size: 17px;
+    margin-bottom: 16px;
+    display: inline-block;
+    border-radius: 20px;
+    
+  }
+  .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .banner p {
+    color: black;
+    font-size: 22px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  .banner button {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    margin-right: 20px;
+  }
+
+  
+  .banner img {
+    transition: transform 0.3s ease-out;
+    
+      width: 100%;
+      height: auto;
+  }
+  
+  .banner img:hover {
+    transform: translate(-50px, -50px);
+  }
+  
+  .banner img:active {
+    transform: translate(50px, 50px);
+  }
+  
