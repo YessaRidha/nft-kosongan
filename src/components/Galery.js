@@ -1,19 +1,31 @@
-import React, { useState } from 'react';
-import Container from '@mui/material/Container';
-import Card from '@mui/material/Card';
-import CardActionArea from '@mui/material/CardActionArea';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import Box from '@mui/material/Box';
-import headerImg from '../assets/00001.png';
+import React, { useState, useEffect } from 'react';
+import {
+  Container, Grid, Card, CardActionArea, CardMedia, CardContent,
+  Dialog, Box,
+} from '@mui/material';
+import { Icon } from '@iconify/react';
+
+
 import './Galery.css';
+import headerImg1 from '../assets/00001.png';
+import headerImg2 from '../assets/00002.png';
+import headerImg3 from '../assets/00003.png';
+import headerImg4 from '../assets/00004.png';
+import headerImg5 from '../assets/00005.png';
+import headerImg6 from '../assets/00006.png';
+import headerImg7 from '../assets/00007.png';
+import headerImg8 from '../assets/00008.png';
 
 export default function ActionAreaCard() {
   const [open, setOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+  const [dialogStyle, setDialogStyle] = useState({
+    height: window.innerWidth < 899 ? 800 : 465,
+    width: window.innerWidth < 899 ? 600 : 1200,
+  });
 
-  const handleOpen = () => {
+  const handleClickOpen = (card) => {
+    setSelectedCard(card);
     setOpen(true);
   };
 
@@ -22,14 +34,9 @@ export default function ActionAreaCard() {
   };
 
   const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 1049,
-    height: 582,
-    bgcolor: '#D9D9D9',
-    border: '2px solid #000',
+    width: window.innerWidth < 899 ? (window.innerWidth < 599 ? dialogStyle.width : dialogStyle.width) : 835,
+    height: window.innerWidth < 899 ? (window.innerWidth < 599 ? dialogStyle.height : dialogStyle.height) : 400,
+    bgcolor: '#fff',
     boxShadow: 24,
     p: 4,
     display: 'flex',
@@ -37,58 +44,180 @@ export default function ActionAreaCard() {
   };
 
   const imageStyle = {
-    width: 434,
-    height: 410,
-    marginRight: 20,
+    width: window.innerWidth < 599 ? 400 : (window.innerWidth < 899 ? 900 : 350),
+    height: window.innerWidth < 599 ? 600 : (window.innerWidth < 899 ? 400 : 410),
+    marginRight: window.innerWidth < 899 ? 0 : 20,
+    marginLeft: window.innerWidth < 599 ? 60 : (window.innerWidth < 899 ? 75 : 0),
+    marginTop: window.innerWidth < 599 ? -20 : (window.innerWidth < 899 ? -350 : 0),
   };
 
   const textStyle = {
-    width: '50%',
+    width: window.innerWidth < 899 ? '50%' : 'initial',
   };
 
-  return (
-    <Container maxWidth="sm" className="galerry">
-        <h1>Galery</h1>
-      <Card sx={{ maxWidth: 250, height: 404 }}>
-        <CardActionArea onClick={handleOpen}>
-          <CardMedia
-            component="img"
-            height={257}
-            width={246}
-            image={headerImg}
-            alt="NFT"
-          />
-        </CardActionArea>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            NFT
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-          Nftikets adalah solusi lengkap untuk tiket online untuk semua jenis acara langsung dan virtual
-          </Typography>
-        </CardContent>
-      </Card>
+  const updateDialogStyle = () => {
+    const newDialogStyle = {
+      height: window.innerWidth < 599 ? 700 : window.innerWidth < 899 ? 800 : 465,
+      width: window.innerWidth < 599 ? 400 : window.innerWidth < 899 ? 600 : 1200,
+    };
+    setDialogStyle(newDialogStyle);
+  };
 
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <div style={imageStyle}>
-            <img src={headerImg} alt="NFT" style={{ width: '100%' }} />
+  useEffect(() => {
+    updateDialogStyle();
+    window.addEventListener('resize', updateDialogStyle);
+    return () => {
+      window.removeEventListener('resize', updateDialogStyle);
+    };
+  }, []);
+
+  const cards = [
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg1,
+      number: '#354',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg2,
+      number: '#355',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg3,
+      number: '#356',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg4,
+      number: '#357',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg5,
+      number: '#358',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg6,
+      number: '#359',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg7,
+      number: '#360',
+    },
+    {
+      title: 'Team Series',
+      description: 'Asatomo Tokyo',
+      image: headerImg8,
+      number: '#361',
+    },
+  ];
+
+  function handleOpenSeaClick(event) {
+    event.preventDefault();
+    window.open(event.target.href, '_blank');
+  }
+
+
+  return (
+    <div className='container'>
+      <Container sx={{ marginTop: '40px', marginBottom: '40px' }}>
+        <div className="header-container">
+          <div className="header-content">
+            <h2 className="gallery">Gallery</h2>
+            <div className="border"></div>
           </div>
-          <div style={textStyle}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-            Nft
-            </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              Nft ticket
-            </Typography>
+          <div className='header-check'>
+            <h2 className="check">Check it on</h2>
+            <div className='opensea-container'>
+              <a href="https://opensea.io/" className="opensea" onClick={handleOpenSeaClick}>
+                OpenSea
+                <Icon icon="simple-icons:opensea" className="opensea-icon" />
+              </a>
+            </div>
           </div>
-        </Box>
-      </Modal>
-    </Container>
+        </div>
+        <Grid container spacing={2}>
+          {cards.map((card, index) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index} className="card-grid">
+              <Card sx={{ height: '100%', borderRadius: '5px' }}>
+                <CardActionArea onClick={() => handleClickOpen(card)}>
+                  <CardMedia
+                    component="img"
+                    height={257}
+                    width={246}
+                    image={card.image}
+                    alt="NFT"
+                  />
+                  <div className="backnomor">
+                    <h5 className="nomor">{card.number}</h5>
+                  </div>
+                </CardActionArea>
+                <CardContent className="card-content">
+                  <div className='team'>{card.title}</div>
+                  <div className='location'>
+                    {card.description}
+                    <Icon icon="mdi:check-decagram-outline" />
+                  </div>
+                  <div className='bid'>TOP BID</div>
+                  <div className='eth'>
+                    <Icon style={{ marginRight: '5px' }} icon="cryptocurrency:eth" />
+                    22.2 ETH
+                  </div>
+                  <div className='days'>2 days left</div>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          maxWidth="md"
+          fullWidth
+          aria-labelledby="dialog-title"
+          PaperProps={{
+            style: {
+              ...style,
+              ...dialogStyle,
+              overflow: window.innerWidth < 599 ? 'hidden' : ''
+            },
+          }}
+        >
+          <Box sx={style}>
+            <div style={imageStyle}>
+              <img src={selectedCard?.image} alt="NFT" style={{ width: '100%', borderRadius: '5px', margin: '30px' }} />
+            </div>
+            <div style={textStyle}>
+              <div className='popup-title'>{selectedCard?.description}</div>
+              <div className='popup-number'>{selectedCard?.number}</div>
+              <Icon icon="simple-icons:opensea" className="popup-icon" />
+              <div className='popup-border'></div>
+              <div className='popup-border2'></div>
+              <div className='popup-border3'></div>
+              <div className='popup-border4'></div>
+              <div className='popup-border-title1'>Headband</div>
+              <div className='popup-border-title2'>Style</div>
+              <div className='popup-border-title3'>Base</div>
+              <div className='popup-border-title4'>Look</div>
+              <Icon className='popup-icon1' icon="jam:headset-f" />
+              <Icon className='popup-icon2' icon="solar:pallete-2-bold" />
+              <Icon className='popup-icon3' icon="ic:outline-circle" />
+              <Icon className='popup-icon4' icon="lucide:rotate-3d" />
+            </div>
+          </Box>
+        </Dialog>
+      </Container>
+      <br />
+    </div>
   );
 }
