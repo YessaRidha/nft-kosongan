@@ -1,19 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { Product } from "./components/Product";
 import Footer from './components/Footer';
 import Faq from './components/Faq';
-import { Contact } from './components/Contact';
-import { Ticket } from './components/Ticket';
-import {Login} from './components/Login';
 import CustomizedTimeline from './components/Timeline';
 import ActionAreaCard from './components/Galery';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Homepage from './components/Homepage';
+import Page2 from './components/Page2';
+import Featured from './components/Featured';
 
 const MainContent = () => {
   return (
     <>
+      <Homepage/>
+      <Page2/>
+      <Featured/>
       <ActionAreaCard/>
       <CustomizedTimeline />
       <Faq />

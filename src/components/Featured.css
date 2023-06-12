@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Syne';
+    src: url('../../public/Font/Syne-VariableFont_wght.ttf') format('truetype');
+  }
+
+
+.Featured h1 {
+    font-family: 'Syne', sans-serif;
+    margin-top: 110vh;
+    margin-left: 80px;
+}
+
+.Card {
+  position: absolute;
+  width: 320px;
+  height: 500px;
+  left: 80px;
+  top: 210vh;
+
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+
+.CardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardContent .row {
+  display: flex;
+  justify-content: space-between;
+  color: #AFAFAF;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.CardContent .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardContent .column .time,
+.CardContent .column .date,
+.CardContent .column .creator,
+.CardContent .column .eventprice {
+  font-size: 14px;
+}
+
+.CardContent .row .time,
+.CardContent .row .date {
+  display: flex;
+  align-items: center;
+}
+
+.CardContent .ket {
+  display: flex;
+  align-items: flex-start;
+  color: #E043D6;
+}
+
+.CardContent .ket .realtime,
+.CardContent .ket .realdate,
+.CardContent .ket .creatordesc,
+.CardContent .ket .coin {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.CardContent .column:not(:last-child) {
+  margin-right: 16px;
+}
+
+
+.barcode-container .barcode {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 40%;
+  height: auto;
+}
+
+.barcode-container .barcode-text {
+  position: absolute;
+  width: 94px;
+  height: 111px;
+  left: 190px;
+  top: 350px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.barcode-container {
+  border-top: 3px dashed;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .Featured h1 {
+    margin-top: 15vh;
+    margin-left: 95px;
+    font-size: 25px;
+  }
+
+  .Card {
+    position: relative;
+    align-items: center;
+    width: 70%;
+    height: auto; 
+    left: 0;
+    top: 0;
+    margin: 10px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .CardContent .column:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+    .barcode-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .barcode-container .barcode {
+      margin: 0 auto;
+      width: 50%;
+      margin-top: 20px;
+    }
+  
+    .barcode-container .barcode-text {
+      position: static;
+      margin-left: 0;
+      margin-top: 20px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) { 
+    .Featured h1 {
+      font-family: 'Syne', sans-serif;
+      margin-top: 75vh;
+      margin-left: 80px;
+  }
+  
+  .Card {
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    left: 80px;
+    top: 140vh;
+    bottom: 50px;
+  
+    background: #FFFFFF;
+    border-radius: 25px;
+  }
+  
+  .CardContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .CardContent .row {
+    display: flex;
+    justify-content: space-between;
+    color: #AFAFAF;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .CardContent .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .CardContent .column .time,
+  .CardContent .column .date,
+  .CardContent .column .creator,
+  .CardContent .column .eventprice {
+    font-size: 14px;
+  }
+  
+  .CardContent .row .time,
+  .CardContent .row .date {
+    display: flex;
+    align-items: center;
+  }
+  
+  .CardContent .ket {
+    display: flex;
+    align-items: flex-start;
+    color: #E043D6;
+  }
+  
+  .CardContent .ket .realtime,
+  .CardContent .ket .realdate,
+  .CardContent .ket .creatordesc,
+  .CardContent .ket .coin {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  
+  .CardContent .column:not(:last-child) {
+    margin-right: 16px;
+  }
+  
+  
+  .barcode-container .barcode {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 40%;
+    height: auto;
+  }
+  
+  .barcode-container .barcode-text {
+    position: absolute;
+    width: 94px;
+    height: 111px;
+    left: 190px;
+    top: 350px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+  
+  .barcode-container {
+    border-top: 3px dashed;
+    margin-top: 30px;
+  }
+  }

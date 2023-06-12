@@ -80,7 +80,7 @@ export const NavBar = () => {
           </Link>
         </Button>
         <Button color="inherit">
-          <Link to="/ticket" className="navbarLink">
+          <Link to="/producta" className="navbarLink">
             Ticket
           </Link>
         </Button>

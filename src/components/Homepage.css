@@ -1,0 +1,149 @@
+body {
+  background-image: white;
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url('../../public/Font/Syne-VariableFont_wght.ttf') format('truetype');
+}
+
+.Homepage h1 {
+  font-family: 'Syne', sans-serif;
+  position: absolute;
+  left: 80px;
+  top: 120px;
+
+  font-family: 'Syne';
+  font-style: normal;
+  font-size: 60px;
+
+  background: linear-gradient(90deg, #8000FF 0%, #FF00FD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  }
+
+  .Homepage p {
+    font-family: 'Syne', sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    line-height: 29px;
+    align: left;
+    margin-top: 63vh;
+    margin-left: 80px;
+  }
+  
+
+.btn button {
+  background: linear-gradient(90deg, #DA22FF 0%, #9733EE 100%);
+  left: 80px;
+  border-radius: 15px;
+}
+
+.Homepage {
+  display: flex;
+}
+
+.img-container {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 324px;
+  height: 405px;
+  left: 145vh;
+  top: 15vh;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .Homepage h1 {
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: auto;
+    left: 90px;
+    top: 50px;
+    font-size: 21px;
+  }
+
+  .Homepage p {
+    position: static;
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 17vh; 
+    margin-bottom: 0;
+    line-height: 10px;
+    margin-right: 70px;
+    max-width: 400px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 150px;
+    margin-top: 20px;
+
+  }
+
+  .Homepage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    margin: 0;
+  }
+
+  .img-container {
+    position: static;
+    margin-top: 20px;
+    margin-left: 0px;
+    
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .Homepage h1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    left: 70px;
+    top: 50px;
+    font-size: 50px;
+  }
+
+  .Homepage p {
+    position: static;
+    display: flex;
+    font-size: 30px;
+    margin-top: 32vh; 
+    margin-bottom: 0;
+    margin-right: 10vh;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90vh;
+    margin-top: 20px;
+
+  }
+
+  .img-container {
+    margin: 0;
+  }
+
+  .img-container {
+    position: static;
+    margin-top: 30px;
+    margin-left: 0px;
+    
+  }
+}
