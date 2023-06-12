@@ -57,7 +57,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .Homepage h1 {
     display: flex;
     text-align: center;
@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Tengah secara vertikal */
+    justify-content: center;
     margin-right: 150px;
     margin-top: 20px;
 
@@ -96,12 +96,53 @@ body {
   }
 
   .img-container {
-    margin: 0; /* Atur margin menjadi 0 */
+    margin: 0;
   }
 
   .img-container {
     position: static;
     margin-top: 20px;
+    margin-left: 0px;
+    
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .Homepage h1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    left: 70px;
+    top: 50px;
+    font-size: 50px;
+  }
+
+  .Homepage p {
+    position: static;
+    display: flex;
+    font-size: 30px;
+    margin-top: 32vh; 
+    margin-bottom: 0;
+    margin-right: 10vh;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90vh;
+    margin-top: 20px;
+
+  }
+
+  .img-container {
+    margin: 0;
+  }
+
+  .img-container {
+    position: static;
+    margin-top: 30px;
     margin-left: 0px;
     
   }
